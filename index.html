@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download SmartyPal – Your Smart Finance Manager</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #1a202c;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+      max-width: 600px;
+      width: 100%;
+      padding: 40px;
+      text-align: center;
+    }
+    .logo-container {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      margin: 0 auto -50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+        .logo-circle {
+      width: 35%;
+      height: 35%;
+      border-radius: 50%;
+      box-shadow: 
+        0 0 0 4px rgba(255,255,255,0.8),
+        0 20px 60px rgba(102,126,234,0.6),
+        inset 0 2px 8px rgba(255,255,255,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 12px;
+      position: relative;
+      z-index: 3;
+    }
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tagline {
+      color: #718096;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
+    }
+    .instructions {
+      background: rgba(102, 126, 234, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 20px 0;
+      color: #4a5568;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .feature { text-align: left; }
+    .feature-icon {
+      width: 40px; height: 40px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      color: white; margin-bottom: 8px; font-size: 20px;
+    }
+    .footer {
+      margin-top: 30px; color: #a0aec0; font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      .container { padding: 30px 20px; }
+      h1 { font-size: 26px; }
+      .logo-container { width: 140px; height: 140px; }
+      .logo { width: 80px; height: 80px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- CIRCLE BEHIND LOGO + TIGHT SPACING -->
+    <div class="logo-container">
+      <div class="logo-circle">
+        <img src="./smartypal%20icon%20(2).png" 
+             alt="SmartyPal Logo" 
+             class="logo"
+             onerror="this.style.display='none'; 
+                     this.parentElement.innerHTML='<div style=`font-size:72px;color:white;line-height:1;`>🤖💰</div>';">
+      </div>
+    </div>
+
+    <h1>SmartyPal</h1>
+    <p class="tagline">Your AI-powered finance dashboard. Track, analyze, and grow smarter with money.</p>
+    
+    <a href="setup.exe" class="download-btn" download>
+      🚀 Download SmartyPal v1.0.0.0 (Auto-updates)
+    </a>
+    
+    <div class="instructions">
+      <strong>Quick Install:</strong> Double-click <code>setup.exe</code>
+    </div>
+    
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <strong>Live Dashboard</strong><br>Income, expenses, trends.
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🤖</div>
+        <strong>AI Insights</strong><br>Smart saving tips.
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <strong>Secure</strong><br>Private data.
+      </div>
+    </div>
+    
+    <div class="footer">
+      © 2025 SmartyPal | Abir-Devs | All rights reserved
+    </div>
+  </div>
+</body>
+</html>
